@@ -1,6 +1,6 @@
 +++
 title = "Hello, World!"
-date = 2018-12-31
+date = 2018-12-31T14:30:00-07:00
 
 [taxonomies]
 tags = ["meta"]
