@@ -7,9 +7,8 @@ tags = ["music", "2018"]
 +++
 
 This is a collection of my favourite albums in 2018 and what I’m
-looking forward to in 2019.
-<!--more-->
-2018 was a very metalcore year for me.
+looking forward to in 2019. 2018 was a very metalcore year for
+me.
 
 ## AOTY
 
