@@ -23,3 +23,31 @@ fn main() -> CliResult {
     Ok(())
 }
 ```
+
+The CLI looks like this:
+
+```rust
+use structopt::StructOpt;
+
+#[derive(StructOpt, Debug)]
+pub enum Cli {
+    /// Creates a new plugin
+    #[structopt(name = "new")]
+    New {
+        /// plugin name
+        name: String,
+    },
+    /// Make a new controller
+    #[structopt(name = "make:controller")]
+    MakeController {
+        /// controller name
+        name: String,
+    },
+    /// Make a new migration
+    #[structopt(name = "make:migration")]
+    MakeMigration {
+        /// migration name
+        name: String,
+    }
+}
+```
