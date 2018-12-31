@@ -11,6 +11,9 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = false
 
+title = "Nathan Knowler | blog"
+description = "A place for me to turn my thoughts into words."
+
 theme = "after-dark"
 
 taxonomies = [
@@ -24,10 +27,10 @@ taxonomies = [
 after_dark_menu = [
     {url = "$BASE_URL", name = "index"},
     {url = "$BASE_URL/tags", name = "tags"},
-    {url = "https://knowlerknow.ws", name = "my main site"},
+    {url = "https://knowlerkno.ws", name = "main site"},
     {url = "https://twitter.com/knowler", name = "twitter"},
     {url = "https://github.com/knowler", name = "github"},
     {url = "https://hire.knowlerkno.ws", name = "resume"},
 ]
 
-after_dark_title = "words knowler knows"
+after_dark_title = "blog"
