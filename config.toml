@@ -28,7 +28,7 @@ after_dark_menu = [
     {url = "$BASE_URL", name = "index"},
     {url = "$BASE_URL/tags", name = "tags"},
     {url = "https://knowlerkno.ws", name = "main site"},
-    {url = "https://twitter.com/knowler", name = "twitter"},
+    {url = "https://twitter.com/kn_wler", name = "twitter"},
     {url = "https://github.com/knowler", name = "github"},
     {url = "https://hire.knowlerkno.ws", name = "resume"},
 ]
