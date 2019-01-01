@@ -7,7 +7,7 @@ tags = ["meta"]
 +++
 
 What is this? This is a place for me to turn my thoughts into
-words. This post will give an brief introduction to me and how I
+words. This post will give a brief introduction to me and how I
 intend to use this blog.
 <!-- more -->
 
