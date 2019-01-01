@@ -3,7 +3,7 @@ title = "2018 in music and a look to the future"
 date = 2018-12-31T17:00:00-07:00
 
 [taxonomies]
-tags = ["music"]
+tags = ["music", "year in review"]
 +++
 
 I love rounding up my favourite albums at the end of the year
