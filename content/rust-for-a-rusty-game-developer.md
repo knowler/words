@@ -7,8 +7,8 @@ tags = ["rust", "coding"]
 +++
 
 Rust is my first foray into a systems programming language since
-highschool and even then I never went in past my toes. I
-remember wanting to learn C++, because that's what the
+highschool and even then I never went in past my toes.<!-- more -->
+I remember wanting to learn C++, because that's what the
 professional game developers were using. I was an impatient
 teenager though — I just wanted to make games — and I ended up
 settling with an ActionScript 3 library called FlashPunk. I used
