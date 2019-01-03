@@ -1,5 +1,5 @@
 [package]
-name = "words-cli"
+name = "words"
 description = "A CLI for creating posts for my blog."
 version = "0.1.0"
 authors = ["Nathan Knowler <nathan@knowler.me>"]
