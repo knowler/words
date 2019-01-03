@@ -1,6 +1,9 @@
 +++
 title = "Rust For A Rusty Game Developer"
 date = 2019-01-02T21:18:00-07:00
+
+[taxomonies]
+tags = ["rust", "coding"]
 +++
 
 Rust is my first foray into a systems programming language since
