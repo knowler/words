@@ -1,6 +1,6 @@
 [package]
 name = "words"
-description = "A CLI for creating posts for my blog."
+description = "A helper for quickly creating posts."
 version = "0.1.0"
 authors = ["Nathan Knowler <nathan@knowler.me>"]
 edition = "2018"
