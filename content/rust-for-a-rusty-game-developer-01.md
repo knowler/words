@@ -37,7 +37,14 @@ became keenly aware of the frustrations of living with a
 sub-sub-par Internet connection. This experience has been
 guiding for me as I dive deeper into programming. **I want to
 build products that everyone, anywhere can access — no matter
-what difficulties may befall them.**
+what difficulties may befall them.** That brings me to what I’ve
+noticed. A theme in a lot of software these days is a lack of
+performance. Much of modern software is web-based in some way
+and that's really great if you are a web developer or need to
+ship software to as many targets as possible, but please stop
+using so much memory. Yes, I’m looking at you *Electron* 👀.
+Anyway, I’d like to learn a systems programming language so I
+can build more efficient software. `</rant>`
 
 ## Why Not C++?
 
@@ -85,14 +92,15 @@ could use Rust for that wasn’t too far fetched for a beginner
 (i.e. making a game), the book did include some great exercises
 which helped me get the underlying theories and values which are
 core to Rust as a language. The final project in the book was a
-multi-threaded web server and it was my motivation. Overall, I
-would recommend the book to anyone wanting to begin with Rust.
-Sure you might want something that is more practical and has
-less theory, but if you take the time to read the book, you’ll
-understand why Rust is the way it is. After reading the book, I
-discovered _[Rust By Example]_ which satisfies the desire for a
-resource that is more practical and straightforward; a great
-reference to keep while programming in Rust.
+multi-threaded web server and it was my motivation to finish
+reading 😂. Overall, I would recommend the book to anyone
+wanting to begin with Rust. Sure you might want something that
+is more practical and has less theory, but if you take the time
+to read the book, you’ll understand why Rust is the way it is.
+After reading the book, I discovered _[Rust By Example]_ which
+satisfies the desire for a resource that is more practical and
+straightforward; a great reference to keep while programming in
+Rust.
 
 ### Documentation
 
