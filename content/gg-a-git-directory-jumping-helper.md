@@ -80,7 +80,7 @@ to achieve this:
 
 ```bash
 gd() {
-  cd $(fd --type d --hidden --follow --exclude .git | fzf)
+  cd $(fd --type d --hidden --follow --exclude .git | fzf --preview "ls -p {}")
 }
 ```
 
@@ -88,7 +88,8 @@ We are telling `fd` to just find directories, follow symbolic
 links, allow hidden directories, but exclude the `.git`
 directory. Luckily, `fd` already respects `.gitignore` so we do
 not need to worry about dependencies or build files polluting
-our search selection.
+our search selection. Also, we are making it fancy with a
+preview window the selected directory’s contents.
 
 I prefer to leave these as separate functions in case I want to
 just jump to the Git repo root or jump to a sub-directoy within
@@ -111,7 +112,7 @@ gr() {
 
 # Go to sub-directory
 gd() {
-  cd $(fd --type d --hidden --follow --exclude .git | fzf)
+  cd $(fd --type d --hidden --follow --exclude .git | fzf --preview "ls -Ap {}")
 }
 
 # Go to a directory within the current Git repository
