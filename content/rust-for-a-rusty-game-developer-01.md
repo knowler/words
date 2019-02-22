@@ -1,6 +1,6 @@
 +++
 title = "Rust For A Rusty Game Developer — Part I"
-date = 2019-01-02T21:18:00-07:00
+date = 2019-01-31T14:31:00-07:00
 
 [taxomonies]
 tags = ["rust", "coding"]
