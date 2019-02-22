@@ -1,6 +1,9 @@
 +++
 title = "gg: a Git directory jumping helper"
 date = 2019-02-22T12:20:48-07:00
+
+[taxonomies]
+tags = ["scripts", "coding"]
 +++
 
 Large projects and mono repos can be a pain to navigate. **gg**
@@ -16,10 +19,10 @@ making the project structure relavant, however, since it is
 still WordPress, the project structure is not exactly flat.
 Often I’ll need to jump to Trellis’ directory to start the
 development VM, run a deploy, or update an environment’s
-configure, but shortly after jump back to the directory of the
-theme or plugin I’m working on. Remembering the level of depth
-and simply writing out the path can be a tedious and erroneous
-task.
+configuration, but shortly after jump back to the directory of
+the theme or plugin I’m working on. Remembering the level of
+depth and simply writing out the path can be a tedious and
+erroneous task.
 
 ## A simple solution
 
