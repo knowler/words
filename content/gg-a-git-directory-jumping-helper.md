@@ -80,7 +80,10 @@ to achieve this:
 
 ```bash
 gd() {
-  cd $(fd --type d --hidden --follow --exclude .git | fzf --preview "ls -Ap {}")
+  cd `
+    fd --type d --hidden --follow --exclude .git \
+    | fzf --preview "ls -Ap {}"
+  `
 }
 ```
 
@@ -112,7 +115,10 @@ gr() {
 
 # Go to sub-directory
 gd() {
-  cd $(fd --type d --hidden --follow --exclude .git | fzf --preview "ls -Ap {}")
+  cd `
+    fd --type d --hidden --follow --exclude .git \
+    | fzf --preview "ls -Ap {}"
+  `
 }
 
 # Go to a directory within the current Git repository
