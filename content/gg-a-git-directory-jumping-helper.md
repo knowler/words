@@ -60,7 +60,7 @@ we’ll create a function for it:
 
 ```bash
 gr() {
-  cd $(git rev-parse --show-toplevel)
+  cd `git rev-parse --show-toplevel`
 }
 ```
 
@@ -110,7 +110,7 @@ And that’s it. Here’s the full and final script:
 
 # Go to Git root
 gr() {
-  cd $(git rev-parse --show-toplevel)
+  cd `git rev-parse --show-toplevel`
 }
 
 # Go to sub-directory
