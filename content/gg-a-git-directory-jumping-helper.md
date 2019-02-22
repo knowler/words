@@ -80,7 +80,7 @@ to achieve this:
 
 ```bash
 gd() {
-  cd $(fd --type d --hidden --follow --exclude .git | fzf --preview "ls -p {}")
+  cd $(fd --type d --hidden --follow --exclude .git | fzf --preview "ls -Ap {}")
 }
 ```
 
