@@ -14,7 +14,7 @@ build_search_index = false
 title = "Nathan Knowler | blog"
 description = "A place for me to turn my thoughts into words."
 
-theme = "after-dark"
+theme = "knowler"
 
 taxonomies = [
     # You can enable/disable RSS
