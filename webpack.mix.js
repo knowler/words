@@ -45,7 +45,8 @@ if (mix.inProduction()) {
             extractor: TailwindExtractor,
             extensions: ['html', 'js']
           }
-        ]
+        ],
+        whitelist: ['pre'],
       })
     ]
   });

@@ -32,7 +32,6 @@
     @screen xl { @apply text-3xl }
   }
 
-  /** purgecss ignore */
   & pre {
     @apply p-3 my-4 overflow-x-scroll text-sm;
 
