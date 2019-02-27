@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#161821">
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     {% if config.generate_rss %}
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}">
@@ -11,8 +12,6 @@
     <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="https://use.typekit.net/jvm2oyx.css">
     {% endblock css %}
-    {% block extra_head %}
-    {% endblock extra_head %}
   </head>
   <body class="bg-mirage text-white font-sans">
     <header class="px-3 py-6 sm:text-center text-sm sm:text-base leading-loose">
