@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+    {% if config.generate_rss %}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml") | safe }}">
+    {% endif %}
+    {% block css %}
+    <link rel="stylesheet" href="https://use.typekit.net/jvm2oyx.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    {% endblock css %}
+    {% block extra_head %}
+    {% endblock extra_head %}
+  </head>
+  <body class="bg-mirage text-white font-sans">
+    <header class="px-3 py-6 sm:text-center text-sm sm:text-base leading-loose">
+      <p>
+        Some words by <a href="//knowlerkno.ws" class="transition text-white hover:text-green font-bold no-underline border-b border-green hover:border-white">Nathan Knowler</a>, a web developer from Canada.
+      </p>
+    </header>
+    <main class="px-4 py-3 sm:px-3">
+      {% block content %}
+      <div class="max-w-md mx-auto">
+        <header class="text-center">
+          <h1 class="text-xl">Latest posts</h1>
+        </header>
+        {% for page in paginator.pages %}
+        <article class="mt-8">
+          <header>
+            <h2 class="text-3xl">
+              <a class="transition text-white hover:text-green no-underline" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+            </h2>
+            <div class="mt-2 flex justify-between text-sm">
+              <p>
+                {{ page.date | date(format="%A, %B %d, %Y") }} &mdash; {{ page.reading_time }} minute read
+              </p>
+            </div>
+          </header>
+          <div class="py-8 sm:px-8">
+            <div class="p-6 border border-green shadow leading-normal">
+              {{ page.summary | safe }}
+              <p class="mt-3">
+                <a class="transition text-green no-underline border-b border-mirage hover:border-green" href="{{ page.permalink | safe }}">Read more...</a>
+              </p>
+            </div>
+          </div>
+        </article>
+        {% endfor %}
+        <nav class="text-center text-sm mb-4">
+          {% if paginator.previous %}
+          <a href="{{ paginator.previous }}">Previous</a> |
+          {% endif %}
+          <span>Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
+          {% if paginator.next %}
+          | <a href="{{ paginator.next }}">Next</a>
+          {% endif %}
+        </nav>
+      </div>
+      {% endblock content %}
+    </main>
+    <footer class="mb-2 px-3 py-2 sm:px-2 text-xs sm:text-center">
+      <p class="leading-normal">
+        Site generated with <a class="transition text-green hover:text-white border-b border-mirage hover:border-green no-underline" href="https://getzola.org">Zola</a> and hosted on <a class="transition text-green hover:text-white border-b border-mirage hover:border-green no-underline" href="https://netlify.com">Netlify</a>.<br>
+        Found a typo or a bug? <a class="transition text-green hover:text-white border-b border-mirage hover:border-green no-underline" href="https://github.com/knowler/words">Make an issue or pull request on GitHub</a>.
+      </p>
+      <p class="mt-3">&copy; 2019 Nathan Knowler</p>
+    </footer>
+  </body>
+</html>
