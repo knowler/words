@@ -1,9 +1,0 @@
-name = "knowler"
-description = "A theme for my blog"
-license = "MIT"
-homepage = "https://github.com/knowler/words/blob/master/themes/knowler"
-min_version = "0.5.0"
-
-[author]
-name = "Nathan Knowler"
-homepage = "https://knowlerkno.ws"

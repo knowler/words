@@ -1,0 +1,23 @@
+{
+  "name": "@knowler/zola-theme",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "build:production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "2.0.1",
+    "color": "^3.1.0",
+    "glhd-tailwindcss-transitions": "^0.3.0",
+    "glob-all": "^3.1.0",
+    "laravel-mix": "^4.0.14",
+    "postcss-nesting": "^7.0.0",
+    "purgecss-webpack-plugin": "^1.4.0",
+    "tailwindcss": "^0.7.4",
+    "vue-template-compiler": "^2.6.7"
+  }
+}

@@ -1,0 +1,20 @@
+{% extends "index.html" %}
+
+{% block content %}
+<div class="max-w-xl mx-auto">
+  <nav class="text-sm mb-3 sm:text-center sm:mb-8 sm:text-base">
+    <a href="/" class="transition border-b border-mirage hover:border-green text-white no-underline">All Posts</a>
+  </nav>
+  <header class="sm:text-center">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight">{{ page.title }}</h1>
+    <p class="mt-3 leading-tight">
+      <span>{{ page.date | date(format="%A, %B %d, %Y") }}</span><br class="sm:hidden">
+      <span class="hidden sm:inline">&mdash;</span>
+      <span class="text-sm sm:text-base">{{ page.reading_time }} minutes to read</span>
+    </p>
+  </header>
+  <div class="rich-text">
+    {{ page.content | safe }}
+  </div>
+</div>
+{% endblock content %}
