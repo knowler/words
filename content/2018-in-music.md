@@ -18,7 +18,7 @@ course that’s not all I listen to, but will definitely reflect
 in my list. I’m going with a weird number — 4 albums — for my
 best of 2018 list. Here we go:
 
-### 4. [Untitled] by mewithoutYou]
+### 4. [Untitled] by mewithoutYou
 
 This album surprised me a lot. First of all, it came out of
 nowhere; it was released very quickly. Second of all, the EP
