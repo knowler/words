@@ -13,7 +13,7 @@ filename, a title case `title`, and a RFC-3339 formated `date`.
 You can use Cargo to install the binary on your machine:
 
 ```shell
-$ cargo install --path cli words
+$ cargo install --path utilities/cli words
 ```
 
 ### Usage
