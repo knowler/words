@@ -20,6 +20,8 @@ taxonomies = [
     {name = "tags", rss = true},
 ]
 
+generate_rss = true
+
 [extra]
 # Put all your custom variables here
 after_dark_menu = [
