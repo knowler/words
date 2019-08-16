@@ -49,11 +49,11 @@
         {% endfor %}
         <nav class="text-center text-sm mb-4">
           {% if paginator.previous %}
-          <a href="{{ paginator.previous }}">Previous</a> |
+          <a class="transition text-green no-underline border-b border-mirage hover:border-green" href="{{ paginator.previous }}">Previous</a> |
           {% endif %}
           <span>Page {{ paginator.current_index }} of {{ paginator.number_pagers }}</span>
           {% if paginator.next %}
-          | <a href="{{ paginator.next }}">Next</a>
+          | <a class="transition text-green no-underline border-b border-mirage hover:border-green" href="{{ paginator.next }}">Next</a>
           {% endif %}
         </nav>
       </div>
